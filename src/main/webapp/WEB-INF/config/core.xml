@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:ctx="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    	http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        ">
+        
+     
+	
+	<ctx:component-scan base-package="com.lti.controller" />
+	
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+		<property name="username" value="system" />
+		<property name="password" value="Newuser123" />
+		<property name="url" value="jdbc:oracle:thin:@192.168.100.139:1521:XE" />
+	</bean>
+	
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" scope="session">
+			<aop:scoped-proxy/>
+			<property  name="packagesToScan" value="com.lti.beans"/>
+			<property name="dataSource" ref="ds" />
+			<property name="jpaVendorAdapter">
+					<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+						<property name="generateDdl" value="false" />
+						<property name="showSql" value="true" />
+					</bean>
+			</property> 
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" /> 
+	</bean>
+	
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="25" />
+		<property name="username" value="nirmal.ganeshR@gmail.com" />
+		<property name="password" value="tamarasheri@1123" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	</beans>

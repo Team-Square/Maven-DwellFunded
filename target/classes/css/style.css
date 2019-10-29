@@ -1,0 +1,493 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body {
+   background-attachment: fixed;
+        background-position: center center;
+        background-color: #d4d1d1;
+        background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: table;
+    position: relative;
+}
+
+h1 {
+    margin: 0px auto;
+    display: table;
+    font-size: 28px;
+    padding: 40px 0px;
+    color: #002e5b;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+header {
+    width: 100%;
+    display: table;
+    background-color: #004d99;
+    margin-bottom: 50px;
+}
+
+#logo {
+    float: left;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+nav {
+    width: auto;
+    float: right;
+}
+
+nav ul {
+    display: table;
+    float: right;
+
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 25px 20px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+    background-color: #0d6331;
+   
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover i {
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a i {
+    padding-right: 10px;
+    color: #002e5b;
+    transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul {
+    display: table;
+    width: 25px;
+}
+
+.toggle-menu ul li {
+    width: 100%;
+    height: 3px;
+    background-color: #002e5b;
+    margin-bottom: 4px;
+}
+
+.toggle-menu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+input[type=checkbox],
+label {
+    display: none;
+}
+
+.content {
+    display: table;
+    margin-bottom: 60px;
+    width: 900px;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #002e5b;
+    border-bottom: 1px solid #fde428;
+    display: table;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(28, 51, 66);
+    text-align: justify;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.2;
+
+}
+
+
+footer {
+    
+    display: table;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.footer-distributed{
+      background: #002e5b;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+      width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Open Sans', cursive;
+      margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+      color:  lightseagreen;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-company-name{
+      color:  #222;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+      width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+    font-weight:400;
+      vertical-align: middle;
+      margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+      color:  lightseagreen;
+      text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+      width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+      margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 2px;
+  
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+  
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+ 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .top-left {
+     margin-left: -25%;
+     margin-top: 2%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width:110%;
+
+  }
+  .top-left p{
+    font-size:25px;
+  }
+  .top-features{
+      position: absolute;
+    top: 70px;
+    left: 400px;
+
+  }
+  .top-features1{
+      position: absolute;
+    top: 250px;
+    left: 300px;
+
+  }
+  .top_align{
+      position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+          }
+  .container1 {
+position: relative;
+width: 100%;
+max-width: 400px;
+}
+
+.container1 img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 1000%;
+
+}
+
+.container1 .btn {
+position: absolute;
+bottom: 1000%;
+left: 70%;
+transform: translate(-75%, 180%);
+background-color: #002e5b;
+color: white;
+font-size: 25px;
+padding: 9px 90px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+opacity: 5.0;
+}
+
+.container1 .btn:hover {
+background-color: #0d6331;
+}
+.bg-img {
+/* The image used */
+height: 657px;
+width:1349px;
+/* Center and scale the image nicely */
+background-image: url("home01.jpg");
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+/* Needed to position the navbar */
+position: relative;
+}
+
+.button1 {
+float:right;
+display: inline-block;
+margin-left: 30px;
+margin-top: 30px;
+padding: 10px 30px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #004d99;
+border: none;
+border-radius: 15px;
+}
+.button2{
+float:right;
+display: inline-block;
+margin-right: 10px;
+margin-top: 30px;
+padding: 10px 30px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #004d99;
+border: none;
+border-radius: 15px;
+
+}
+
+.button1:hover {background-color: #0d6331}
+.button2:hover {background-color: #0d6331}
+
+.top-features li {
+list-style-type:circle;
+color:  #002e5b;
+font-size:27px;
+line-height: 1.5;
+width: 143%;   
+}
+.top-features1 li {
+list-style-type:circle;
+color:  #002e5b;
+font-size:35px;
+line-height: 1.5;
+width: 143%;   
+}
+.xom img{
+margin-left: -25%;
+width: 150%;
+height: 100%;
+}
+.xom1 img{
+margin-left: -25%;
+width: 150%;
+height: 175%;
+}
+.xom2 img{
+margin-left: -25%;
+width: 150%;
+height:55%;
+}
+.bow img{
+float:left;
+width: 16%;
+height: 16%;
+}
+.footer-left img{
+width: 40%;
+height: 40%;
+}
+
+div.transbox {
+    height: 250px;
+    width: 40%;
+    margin: 100px -130px;     
+    background-color: #ffffff;
+    border: 5px solid RED;
+    border-radius: 10%;
+    opacity: 0.6;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-size: 180%;
+    opacity: 1.0;
+    font-weight:bolder;
+    color: black;
+  }
+  div.transbox p span{
+    color: RED;
+}
+
+div.transbox1 {
+    height: 250px;
+    width: 40%;
+        margin: -350px -190px;     
+    background-color: #ffffff;
+    border: 5px solid rgb(211, 31, 31);
+    border-radius: 10%;
+    opacity: 0.9;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+  }
+  
+  div.transbox1 p {
+      font-family: 'Times New Roman', Times, serif;
+    margin: 5%;
+    font-size: 123%;
+    opacity: 1.0;
+    font-weight:bolder;
+    color: black;
+  }
+  div.transbox1 p span{
+    color: RED;
+}
+
